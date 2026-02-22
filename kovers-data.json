@@ -1,0 +1,49 @@
+{
+  "rooms": [
+    {
+      "id": "general",
+      "name": "Общий",
+      "isPrivate": true,
+      "createdAt": "2026-02-22T13:29:55.317Z"
+    },
+    {
+      "id": "ideas",
+      "name": "Идеи",
+      "isPrivate": true,
+      "createdAt": "2026-02-22T13:29:55.317Z"
+    },
+    {
+      "id": "support",
+      "name": "Поддержка",
+      "isPrivate": true,
+      "createdAt": "2026-02-22T13:29:55.317Z"
+    }
+  ],
+  "messages": {
+    "general": [
+      {
+        "id": "c8f5bb71-5f2e-4fef-9434-6bce4a91e00a",
+        "roomId": "general",
+        "author": "Kovers Bot",
+        "text": "Добро пожаловать в Kovers. Это полностью рабочий MVP-чата на собственном backend.",
+        "createdAt": "2026-02-22T13:29:55.318Z"
+      },
+      {
+        "id": "f37b5a56-edce-4e59-9efa-9e668d8dd34c",
+        "roomId": "general",
+        "author": "tester",
+        "text": "hello from test",
+        "createdAt": "2026-02-22T13:29:56.288Z"
+      },
+      {
+        "id": "2af92c90-b76f-4fd6-b3ce-231d20927e5e",
+        "roomId": "general",
+        "author": "DemoUser",
+        "text": "Привет! Это рабочий Kovers чат.",
+        "createdAt": "2026-02-22T13:30:15.620Z"
+      }
+    ],
+    "ideas": [],
+    "support": []
+  }
+}
