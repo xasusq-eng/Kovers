@@ -3,53 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kovers — приватный чат</title>
+    <title>Kovers — реальный чат</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="auth-screen" class="center-card">
-      <h1>Kovers</h1>
-      <p>Рабочий приватный чат (MVP)</p>
-      <form id="auth-form">
-        <input id="username" type="text" maxlength="24" placeholder="Ваш ник" required />
-        <button type="submit">Войти</button>
-      </form>
-    </div>
-
-    <div id="app" class="app hidden">
-      <aside class="sidebar">
-        <div class="brand">Kovers</div>
-        <div class="user" id="current-user"></div>
-        <div class="rooms-header">
-          <h2>Комнаты</h2>
-          <button id="create-room-btn" type="button">+ Создать</button>
+    <section id="auth" class="card-wrap">
+      <div class="card">
+        <h1>Kovers</h1>
+        <p>Регистрация, чаты, сообщения и звонки.</p>
+        <div class="tabs">
+          <button id="tab-login" class="active" type="button">Вход</button>
+          <button id="tab-register" type="button">Регистрация</button>
         </div>
-        <ul id="room-list"></ul>
+        <form id="auth-form">
+          <input id="auth-username" placeholder="Логин (a-z0-9_)" maxlength="24" required />
+          <input id="auth-password" type="password" placeholder="Пароль" minlength="6" required />
+          <button id="auth-submit" type="submit">Войти</button>
+        </form>
+        <div id="auth-error" class="error"></div>
+      </div>
+    </section>
+
+    <section id="app" class="app hidden">
+      <aside class="left">
+        <div class="top">
+          <strong>Kovers</strong>
+          <span id="me"></span>
+        </div>
+        <div class="actions">
+          <button id="new-room" type="button">+ Группа</button>
+          <button id="new-dm" type="button">+ Личный чат</button>
+          <button id="logout" type="button">Выйти</button>
+        </div>
+        <ul id="rooms"></ul>
       </aside>
 
-      <main class="chat">
+      <main class="main">
         <header>
-          <h2 id="room-title"></h2>
-          <span>Приватный режим</span>
+          <h2 id="room-title">Выберите чат</h2>
+          <div>
+            <button id="start-voice" type="button">🎙 Голосовой</button>
+            <button id="start-video" type="button">📹 Видео</button>
+          </div>
         </header>
+
+        <section id="calls" class="calls"></section>
         <section id="messages" class="messages"></section>
-        <form id="composer" class="composer">
-          <input id="message-input" type="text" maxlength="1500" placeholder="Напишите сообщение" required />
+
+        <form id="send-form" class="send">
+          <input id="message" placeholder="Введите сообщение" maxlength="1500" required />
           <button type="submit">Отправить</button>
         </form>
       </main>
-    </div>
-
-    <dialog id="room-dialog">
-      <form id="room-form" method="dialog">
-        <h3>Новая комната</h3>
-        <input id="room-name" type="text" maxlength="40" placeholder="Например: Проект X" required />
-        <menu>
-          <button type="button" id="cancel-room">Отмена</button>
-          <button type="submit">Создать</button>
-        </menu>
-      </form>
-    </dialog>
+    </section>
 
     <script src="script.js"></script>
   </body>
