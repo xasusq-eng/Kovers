@@ -5,7 +5,7 @@ const crypto = require('crypto');
 const { URL } = require('url');
 
 const PORT = process.env.PORT || 4173;
-const DATA_FILE = path.join(__dirname, 'kovers-data.json');
+const DATA_FILE = path.join(__dirname, 'kovers-data.local.json');
 
 function nowIso() {
   return new Date().toISOString();

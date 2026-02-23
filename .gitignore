@@ -1,0 +1,2 @@
+# Local runtime database (avoid merge conflicts between branches)
+kovers-data.local.json
