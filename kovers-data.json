@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": "42aec378-5c32-4804-a127-e34a64a70d3b",
+      "username": "alice",
+      "passwordHash": "6bac0eaf972bc71fca01a627816e011d:ea837ffc73b966a3ead3482361fd4816b4de71d76b49a07ace0770067e7d5c67f8a095685f55ca938a5f2949acb57fc4585211c60c191fe128bb940798d54a23",
+      "createdAt": "2026-02-22T13:37:18.307Z"
+    },
+    {
+      "id": "1dac3054-dd63-4736-adda-5c2f75bc8193",
+      "username": "user67470",
+      "passwordHash": "20b546aaff84970c6e03e09f4d94a9aa:8cd063a28b5cd336d05d2e185f18eb8199e4ca51e7626182067ae6dfe3fe678fb5002c176a2b5686066b221dde7f2e8966faf77e8a6bd11c2b7853521c972c40",
+      "createdAt": "2026-02-22T13:37:52.122Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "76cf1213c550e9232673e54935947cb9a3f4dd5fc00eba61",
+      "userId": "42aec378-5c32-4804-a127-e34a64a70d3b",
+      "createdAt": "2026-02-22T13:37:31.326Z"
+    },
+    {
+      "token": "d52eac50fbbde7f89b44793545f31ba7d8aa727bb8a82ea3",
+      "userId": "1dac3054-dd63-4736-adda-5c2f75bc8193",
+      "createdAt": "2026-02-22T13:37:52.234Z"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "336e61c3-ec5e-4d08-aea7-83355c80b990",
+      "type": "group",
+      "name": "team",
+      "members": [
+        "42aec378-5c32-4804-a127-e34a64a70d3b"
+      ],
+      "createdBy": "42aec378-5c32-4804-a127-e34a64a70d3b",
+      "createdAt": "2026-02-22T13:37:32.168Z"
+    },
+    {
+      "id": "d7fd48fc-7ed3-422f-a87f-3991bfbaa15d",
+      "type": "group",
+      "name": "general",
+      "members": [
+        "1dac3054-dd63-4736-adda-5c2f75bc8193"
+      ],
+      "createdBy": "1dac3054-dd63-4736-adda-5c2f75bc8193",
+      "createdAt": "2026-02-22T13:37:52.341Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "59bab8a4-0e46-4850-a90f-3a0130493658",
+      "roomId": "336e61c3-ec5e-4d08-aea7-83355c80b990",
+      "authorId": "42aec378-5c32-4804-a127-e34a64a70d3b",
+      "text": "hello real chat",
+      "createdAt": "2026-02-22T13:37:32.987Z"
+    },
+    {
+      "id": "047a5aaf-53aa-498a-a399-b75fd0a6798f",
+      "roomId": "d7fd48fc-7ed3-422f-a87f-3991bfbaa15d",
+      "authorId": "1dac3054-dd63-4736-adda-5c2f75bc8193",
+      "text": "Первое реальное сообщение в новом аккаунте",
+      "createdAt": "2026-02-22T13:37:52.400Z"
+    }
+  ],
+  "calls": [
+    {
+      "id": "09446da9-b3a5-415b-b852-9701430e3fc5",
+      "roomId": "336e61c3-ec5e-4d08-aea7-83355c80b990",
+      "type": "voice",
+      "status": "active",
+      "participants": [
+        "alice"
+      ],
+      "startedAt": "2026-02-22T13:37:33.020Z",
+      "endedAt": null
+    },
+    {
+      "id": "a64c48b1-353f-4653-9d1f-d92e1411ddde",
+      "roomId": "d7fd48fc-7ed3-422f-a87f-3991bfbaa15d",
+      "type": "voice",
+      "status": "active",
+      "participants": [
+        "user67470"
+      ],
+      "startedAt": "2026-02-22T13:37:52.465Z",
+      "endedAt": null
+    }
+  ]
+}
